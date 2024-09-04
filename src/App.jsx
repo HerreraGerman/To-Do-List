@@ -1,45 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './styles/App.css';
+import Title from './components/title';
+import InputBar from './components/inputBar';
+import Task from './components/task'
 
 function App() {
 
   return (
     <>
       <div>
-      <h1>Ger/Mane To-Do List</h1>
-      <div class="AddBar"><input></input> <button>Add</button></div>
+      <Title title={'Ger/Mane To-Do List'}></Title>
+      <InputBar></InputBar>
       <ul>
-        <li>
-          <input type="checkbox"></input>
-          Task N
-          <button class="delete">🗑️</button>
-        </li>
-        <li>
-          <input type="checkbox"></input>
-          Task Nº1
-          <button class="delete">🗑️</button>
-        </li>
-        <li>
-          <input type="checkbox"></input>
-          <del>Completed Task Nº2</del>
-          <button class="delete">🗑️</button>
-        </li>
-        <li>
-          <input type="checkbox"></input>
-          Task K
-          <button class="delete">🗑️</button>
-        </li>
-        <li>
-          <input type="checkbox"></input>
-          Task 2
-          <button class="delete">🗑️</button>
-        </li>
-        <li>
-          <input type="checkbox"></input>
-          <del>Completed Task Nº1</del>
-          <button class="delete">🗑️</button>
-        </li>
+        <Task task={'Task N'}></Task>
+        <Task task={'Task Nº1'}></Task>
+        <Task task={'Completed Task Nº2'}></Task>
+        <Task task={'Task K'}></Task>
+        <Task task={'Task 2'}></Task>
+        <Task task={'Completed Task Nº1'}></Task>
       </ul>
       </div>
     </>
