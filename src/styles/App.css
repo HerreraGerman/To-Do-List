@@ -22,7 +22,20 @@ h1{
     margin-left: 50px;
 }
 
+.BlankTasks{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
 ul{
+    list-style: none;
+}
+
+ol{
     list-style: none;
 }
 
